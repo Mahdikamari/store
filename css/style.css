@@ -1,0 +1,222 @@
+@font-face {
+    src: url("../shabnam-font-v5.0.1/Shabnam.woff") format("woff") ;
+    font-family: "Shabnam";
+    font-weight: normal;
+}
+@font-face {
+    src: url("../shabnam-font-v5.0.1/Shabnam-Bold.woff") format("woff") ;
+    font-family: "Shabnam";
+    font-weight: bold;
+}
+@font-face {
+    src: url("../shabnam-font-v5.0.1/Shabnam-Light.woff") format("woff") ;
+    font-family: "Shabnam";
+    font-weight: lighter;
+}
+@keyframes sliderx{
+    0% {
+        background-image:url('../image/ps4.jpg');
+    }
+    50%{
+        background-image:url('../image/ps5.jpg'); 
+    }
+    100%{
+        background-image:url('../image/کنسول.jpg');
+    }
+}
+@keyframes borderx{
+    0% {
+       border-radius: 0;
+    }
+    50%{
+        border-radius: 80px;
+    }
+    100%{
+        border-radius: 0;
+    }
+}
+@keyframes zoompic {
+    0% {
+      transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+  }
+body {
+    font-family: "Shabnam" !important;
+}
+header{
+    display: flex;
+    flex-direction:row;
+    padding-bottom: 15px;
+    padding-bottom: 15px;
+}
+.logo{
+    display: flex;
+    width: 150px;
+    height: 70px;
+    border-radius: 0  0  0  20px;
+}
+.box-search{
+    display: flex;
+    width: 900px;
+    height: 50px;
+    padding-right: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.searchbox{
+    width: 400px;
+    border-radius:0 10px 10px 0;
+}
+.btn-searchbox{
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+.login{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 20px;
+}
+.login a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+.cart{
+    display: flex;
+    width: 130px;
+    height: 50px;
+    border:solid 1px;
+    border-radius: 5px;
+    border-color: rgb(133, 111, 111);
+    background-color: rgb(223, 63, 63);
+    align-items: center;
+    justify-content: center;
+}
+.cart a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+.top-menu{
+    display: flex;
+    margin-right: 20px;
+}
+.top-menu a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.slider{
+    padding: 20px;
+    width: 100%;
+    height: 500px;
+    background-image: url(../image/کنسول.jpg);
+    background-size:cover;
+    animation-name: sliderx;
+    animation-duration: 6s;
+    animation-iteration-count: 100;
+}
+.Products{
+    display: flex;
+    margin-bottom: 15px;
+}
+box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+box img{
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    width: 300px;
+    height: 200px;
+}
+box img:hover{
+    animation-duration: 2s;
+    animation-name: zoompic;
+}
+box a{
+    text-decoration: none;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: dimgrey;
+}
+.footer-link a{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.footer-link i{
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+}
+.footer-link a:hover:{
+    color: yellow;
+}
+.box-kharid{
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 500px;
+    height: 70px;
+    border:solid 2px black;
+    border-radius: 20px 20px 20px 20px;
+}
+.box-kharid h5{
+    display: flex;
+    margin: auto;
+    color: chocolate;
+}
+.lenovo{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 500px;
+    height: 350px;
+    background-image: url(../image/لپ-تاپ-لنوو.jpg);
+    animation-name: borderx;
+    animation-duration: 3s;
+    animation-iteration-count: 100;
+}
+.detail,h6{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.btn-kharid{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+}
+.box-kharid p{
+    display: flex;
+    margin: auto;
+}
+.btn-kharid:hover{
+    background-color: cyan;
+    color: black;
+}
